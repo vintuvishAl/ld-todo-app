@@ -6,7 +6,7 @@ docker-compose build fe
 # set the .env for the backend
 cp be/.env.example be/.env
 
-# run composer and excute requirment for the be to run 
+# run composer and excute requirment for be to run 
 docker-compose up -d
 docker-compose exec be composer install
 docker-compose exec be php artisan key:generate
